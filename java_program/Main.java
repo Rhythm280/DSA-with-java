@@ -1,6 +1,6 @@
 package java_program;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         byte b = 10;
         char c = 'h';
@@ -12,5 +12,6 @@ class Main {
         // float + int - double = double
         System.out.println((f * b) + " " + (i / c) + " " + (d - s));
         System.out.println(result);
+        System.out.println("Hello World!....");
     }
 }

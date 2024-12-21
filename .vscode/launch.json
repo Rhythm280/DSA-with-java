@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "selection_sort",
+            "request": "launch",
+            "mainClass": "Recursion.selection_sort",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "bubble_sort",
+            "request": "launch",
+            "mainClass": "Recursion.bubble_sort",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "patterns",
+            "request": "launch",
+            "mainClass": "Recursion.patterns",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "rotated_binary_search_using_recursion",
+            "request": "launch",
+            "mainClass": "Recursion.rotated_binary_search_using_recursion",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "find_all_the_traget_index",
+            "request": "launch",
+            "mainClass": "Recursion.find_all_the_traget_index",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "linear_search",
             "request": "launch",
             "mainClass": "Recursion.linear_search",

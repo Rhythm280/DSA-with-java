@@ -1,12 +1,13 @@
 package Arrays;
 
-import java.util.Scanner;
+
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class MD_array {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int[][] arr = new int[3][3]; // in this adding no of rows is mandatory as compare to columns because is
+        int[][] arr = new int[3][3]; // in this addinjg no of rows is mandatory as compare to columns because is
                                      // decides that how many no. of arrays we need to create in the Heap Memory.
         // each row of array can have various no. of columns.
         int[][] arr1 = {

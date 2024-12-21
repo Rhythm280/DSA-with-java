@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linear_search",
+            "request": "launch",
+            "mainClass": "Recursion.linear_search",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "array_is_sorted_or_not",
+            "request": "launch",
+            "mainClass": "Recursion.array_is_sorted_or_not",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "leetCode1342",
+            "request": "launch",
+            "mainClass": "Recursion.leetCode1342",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "count_0",
+            "request": "launch",
+            "mainClass": "Recursion.count_0",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "palindrom_number",
+            "request": "launch",
+            "mainClass": "Recursion.palindrom_number",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "reverse_of_number",
+            "request": "launch",
+            "mainClass": "Recursion.reverse_of_number",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sum_product_of_digits",
+            "request": "launch",
+            "mainClass": "Recursion.sum_product_of_digits",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sum_",
+            "request": "launch",
+            "mainClass": "Recursion.sum_",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sum_of_digits",
+            "request": "launch",
+            "mainClass": "Recursion.sum_of_digits",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sum_of_numbers",
+            "request": "launch",
+            "mainClass": "Recursion.sum_of_numbers",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "Recursion.factorial",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "range_of_n",
+            "request": "launch",
+            "mainClass": "Recursion.range_of_n",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "recurison",
+            "request": "launch",
+            "mainClass": "Recursion.recurison",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "MD_array",
+            "request": "launch",
+            "mainClass": "MD_array",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "reverse_a_string",
             "request": "launch",
             "mainClass": "conditional.reverse_a_string",

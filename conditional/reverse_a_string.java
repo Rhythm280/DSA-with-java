@@ -20,5 +20,6 @@ public class reverse_a_string {
             reversedStr2 += str.charAt(i);
         }
         System.out.println("Reversed string (for loop): " + reversedStr2);
+        obj.close();
     }
 }

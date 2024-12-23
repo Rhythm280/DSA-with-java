@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "quick_sort",
+            "request": "launch",
+            "mainClass": "Sorting.quick_sort",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "merg_sort",
+            "request": "launch",
+            "mainClass": "Sorting.merg_sort",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "selection_sort",
             "request": "launch",
             "mainClass": "Recursion.selection_sort",

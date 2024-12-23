@@ -25,6 +25,7 @@ public class quick_sort {
             while (arr[e] > pivot) {
                 e--;
             }
+            // also a reason why  if its already sorted it.
             if (s <= e) {
                 int temp = arr[s];
                 arr[s] = arr[e];
@@ -33,6 +34,7 @@ public class quick_sort {
                 e--;
             }
         }
+        // now pivot is at correct index, please sort 2nd half now.
         sort(arr, low, e);
         sort(arr, s, high);
     }

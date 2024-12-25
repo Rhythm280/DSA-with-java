@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "allPrimeNumbersBetweenTwoGivenNumber",
+            "request": "launch",
+            "mainClass": "assignments.Methods.allPrimeNumbersBetweenTwoGivenNumber",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "pythagoreanTriplet",
+            "request": "launch",
+            "mainClass": "assignments.Methods.pythagoreanTriplet",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "GfG",
+            "request": "launch",
+            "mainClass": "assignments.Methods.GfG",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "displalyGrades",
+            "request": "launch",
+            "mainClass": "assignments.Methods.displalyGrades",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "circumfrenceAndAreaOfCircle",
+            "request": "launch",
+            "mainClass": "assignments.Methods.circumfrenceAndAreaOfCircle",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "MaxMinFunction",
+            "request": "launch",
+            "mainClass": "assignments.Methods.MaxMinFunction",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sumOfNegativeNumberAndPositiveEvenAndOddNumberFromTheList",
+            "request": "launch",
+            "mainClass": "assignments.sumOfNegativeNumberAndPositiveEvenAndOddNumberFromTheList",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "noOfEventDayaInAMonth",
+            "request": "launch",
+            "mainClass": "assignments.noOfEventDayaInAMonth",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "inputTill0PrintTheLargestNumber",
+            "request": "launch",
+            "mainClass": "assignments.inputTill0PrintTheLargestNumber",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "inputTill0AndPrintSumOfAllNumber",
+            "request": "launch",
+            "mainClass": "assignments.inputTill0AndPrintSumOfAllNumber",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "subtract_product_and_sum_of_digits",
+            "request": "launch",
+            "mainClass": "java_program.subtract_product_and_sum_of_digits",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "Main_7",
+            "request": "launch",
+            "mainClass": "java_program.Main_7",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "quick_sort",
             "request": "launch",
             "mainClass": "Sorting.quick_sort",

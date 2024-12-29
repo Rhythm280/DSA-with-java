@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ASCII_subString",
+            "request": "launch",
+            "mainClass": "assignments.String.ASCII_subString",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "skipAppNotApple",
+            "request": "launch",
+            "mainClass": "assignments.String.skipAppNotApple",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "skipString",
+            "request": "launch",
+            "mainClass": "assignments.String.skipString",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "skip",
+            "request": "launch",
+            "mainClass": "assignments.String.skip",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "subSequence",
+            "request": "launch",
+            "mainClass": "assignments.String.subSequence",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sumOfArray",
+            "request": "launch",
+            "mainClass": "assignments.Arrays.sumOfArray",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "getConcatenation",
+            "request": "launch",
+            "mainClass": "assignments.Arrays.getConcatenation",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "arrayFromPermutation",
+            "request": "launch",
+            "mainClass": "assignments.Arrays.arrayFromPermutation",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "allPrimeNumbersBetweenTwoGivenNumber",
             "request": "launch",
             "mainClass": "assignments.Methods.allPrimeNumbersBetweenTwoGivenNumber",

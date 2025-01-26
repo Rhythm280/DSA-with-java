@@ -3,9 +3,9 @@ package search.questions;
 public class search_in_rotated_sorted_array_with_duplicates {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 2, 2, 6, 8, 5, 3, 2, 1 };
-        // int target = 2;
+        int target = 2;
         System.out.println(pivot(arr));
-        // System.out.println(search(arr, target));
+        System.out.println(search(arr, target));
     }
 
     static int search(int[] arr, int target) {

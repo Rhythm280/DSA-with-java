@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "diceRolingProblem",
+            "request": "launch",
+            "mainClass": "Recursion.leetcodeQuestions.diceRolingProblem",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "letterCombination",
+            "request": "launch",
+            "mainClass": "Recursion.leetcodeQuestions.letterCombination",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "spiralMatrix",
+            "request": "launch",
+            "mainClass": "assignments.Arrays.spiralMatrix",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "ASCII_subString",
             "request": "launch",
             "mainClass": "assignments.String.ASCII_subString",

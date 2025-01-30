@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "maze",
+            "request": "launch",
+            "mainClass": "Recursion.maze",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "maze",
+            "request": "launch",
+            "mainClass": "backtracking.maze",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "diceRolingProblem",
             "request": "launch",
             "mainClass": "Recursion.leetcodeQuestions.diceRolingProblem",

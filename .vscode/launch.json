@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "printMatrixAndPath",
+            "request": "launch",
+            "mainClass": "Recursion.printMatrixAndPath",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "allPaths",
+            "request": "launch",
+            "mainClass": "Recursion.allPaths",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "maze",
             "request": "launch",
             "mainClass": "Recursion.maze",

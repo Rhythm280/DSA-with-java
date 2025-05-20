@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "range",
+            "request": "launch",
+            "mainClass": "range",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "sudokuSolver",
+            "request": "launch",
+            "mainClass": "Recursion.sudokuSolver",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "nKnights",
+            "request": "launch",
+            "mainClass": "Recursion.nKnights",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "nQueens",
+            "request": "launch",
+            "mainClass": "Recursion.nQueens",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "printMatrixAndPath",
             "request": "launch",
             "mainClass": "Recursion.printMatrixAndPath",

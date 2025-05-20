@@ -22,7 +22,7 @@ public class maze {
         if (r == 1 || c == 1) {
             return 1;
         }
-        int ans = mazeCount(r - 1, c) + mazeCount(r, c - 1);;
+        int ans = mazeCount(r - 1, c) + mazeCount(r, c - 1);
         return ans;
     }
 

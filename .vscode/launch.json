@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Singleton",
+            "request": "launch",
+            "mainClass": "Singleton",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "IntroductionOfOOPs",
+            "request": "launch",
+            "mainClass": "IntroductionOfOOPs",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "wrraperClass",
+            "request": "launch",
+            "mainClass": "OOPs.wrraperClass",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
+            "name": "IntroductionOfOOPs",
+            "request": "launch",
+            "mainClass": "OOPs.IntroductionOfOOPs",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "range",
             "request": "launch",
             "mainClass": "range",

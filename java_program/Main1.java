@@ -71,7 +71,7 @@ public class Main1 {
         for(int i = 0; i < A.size(); i++) {
             for(int j = 0; j < A.size(); j++) {
                 res = Math.abs(A.get(i) - A.get(j) + Math.abs(i - j));
-        System.out.println(res);
+        // System.out.println(res);
                 currentMax = Math.max(currentMax, res);
                 // max = Math.max(currentMax, max);
             }

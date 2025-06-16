@@ -10,16 +10,22 @@ public class Main_3 {
             int b = obj.nextInt();
             String operator;
             operator = obj.next();
-            if (operator.equals("+")) {
-                System.out.println(a + b);
-            } else if (operator.equals("-")) {
-                System.out.println(a - b);
-            } else if (operator.equals("*")) {
-                System.out.println(a * b);
-            } else if (operator.equals("/")) {
-                System.out.println(a / b);
-            } else {
-                System.out.println("Please, Enter valid operator");
+            switch (operator) {
+                case "+":
+                    System.out.println(a + b);
+                    break;
+                case "-":
+                    System.out.println(a - b);
+                    break;
+                case "*":
+                    System.out.println(a * b);
+                    break;
+                case "/":
+                    System.out.println(a / b);
+                    break;
+                default:
+                    System.out.println("Please, Enter valid operator");
+                    break;
             }
         }
     }

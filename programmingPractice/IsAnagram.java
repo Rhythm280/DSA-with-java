@@ -13,23 +13,20 @@ public class IsAnagram {
         // remove the space and convert the uppercase into lowercase.
         str1 = str1.replace("//s", "").toLowerCase();
         str2 = str2.replace("//s", "").toLowerCase();
-        if (str1.length() != str2.length()) {
+        if(str1.length() != str2.length()) {
             return false;
         }
-
         int[] freq = new int[256];
-        for (int i = 0; i < str1.length(); i++) {
+        for(int i = 0; i < str1.length(); i++) {
             char ch = str1.charAt(i);
             freq[ch]++;
         }
-
-        for (int i = 0; i < str2.length(); i++) {
+        for(int i = 0; i < str2.length(); i++) {
             char ch = str2.charAt(i);
             freq[ch]--;
         }
-
-        for (int i = 0; i < 256; i++) {
-            if (freq[i] != 0) {
+        for(int i = 0; i < 256; i++) {
+            if(freq[i] != 0) {
                 return false;
             }
         }

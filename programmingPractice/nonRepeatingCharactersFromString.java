@@ -7,6 +7,19 @@ public class nonRepeatingCharactersFromString {
     public static void main(String[] args) {
         String str = "aabbccdder";
         System.out.println(nonRepeatingChar(str));
+        int[] freq = new int[256];
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch != ' ') {
+                freq[ch]++;
+            }
+        }
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (freq[ch] == 1) {
+                System.out.println(ch + ": " + freq[ch]);
+            }
+        }
     }
 
     public static char nonRepeatingChar(String str) {
@@ -24,16 +37,16 @@ public class nonRepeatingCharactersFromString {
         // }
         // }
         // return null;
-        int[] freq = new int[256];
+        int[] freq = new int[26];
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (ch != ' ') {
-                freq[ch]++;
+                freq[ch - 'a']++;
             }
         }
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if (freq[ch] == 1) {
+            if (freq[ch - 'a'] == 1) {
                 return ch;
             }
         }

@@ -1,3 +1,6 @@
+import java.util
+import java.util.Arrays;,Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // String str = "Hello world!";
@@ -137,46 +140,61 @@ public class Main {
         //     System.out.println(original + " is not a strong number");
         // }
 
-        int num1 = 5; // number of primes to find
-        int number = 2; // starting from the first prime number
-        int count = 0;
+        // int num1 = 5; // number of primes to find
+        // int number = 2; // starting from the first prime number
+        // int count = 0;
 
-        while (count < num1) {
-            boolean isPrime = true;
-            int c = 2;
+        // while (count < num1) {
+        //     boolean isPrime = true;
+        //     int c = 2;
 
-            while (c <= Math.sqrt(number)) {
-                if (number % c == 0) {
-                    isPrime = false;
-                    break; // exit the loop early
-                }
-                c++;
-            }
+        //     while (c <= Math.sqrt(number)) {
+        //         if (number % c == 0) {
+        //             isPrime = false;
+        //             break; // exit the loop early
+        //         }
+        //         c++;
+        //     }
 
-            if (isPrime) {
-                System.out.println(number + " is a prime number");
-                count++;
-            }
+        //     if (isPrime) {
+        //         System.out.println(number + " is a prime number");
+        //         count++;
+        //     }
 
-            number++;
-        }
+        //     number++;
+        int[] arr1 = {2, 4};
+        int[] arr2 = {1, 4};
+        int k = 3;
+        System.out.println(kthSmallestMultiple(arr1, arr2, k));
     }
 
-    public static int factorial(int n) {
-        if (n <= 1) {
-            return 1;
-        }
-        return n * factorial(n - 1);
-    }
-
-    public static boolean check(String str, char ch) {
-        boolean isPresent = false;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == ch) {
-                isPresent = true;
+    public static long kthSmallestMultiple(int[] nums1, int[] nums2, int k) {
+        long[] res = new long[nums1.length * nums2.length];
+        int index = 0;
+        for (int i = 0; i < nums1.length; i++) {
+            for (int j = 0; j < nums2.length; j++) {
+                res[index++] = (long) nums1[i] * nums2[j]; // cast to long to avoid overflow
             }
         }
-        return isPresent;
+        Arrays.sort(res);
+        return res[(int)k - 1];
     }
+
+    // public static int factorial(int n) {
+    //     if (n <= 1) {
+    //         return 1;
+    //     }
+    //     return n * factorial(n - 1);
+    // }
+
+    // public static boolean check(String str, char ch) {
+    //     boolean isPresent = false;
+    //     for (int i = 0; i < str.length(); i++) {
+    //         if (str.charAt(i) == ch) {
+    //             isPresent = true;
+    //         }
+    //     }
+    //     return isPresent;
+    // }
 
 }

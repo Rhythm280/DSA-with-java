@@ -178,7 +178,7 @@ public class pattern_1 {
         for (int row = 1; row < 2 * n; row++) {
             int totalcols = row > n ? 2 * n - row : row;
             for (int space = 1; space < totalcols; space++) {
-                System.out.print(" ");
+                System.out.print("  ");
             }
             for (int col = 1; col <= n - totalcols + 1; col++) {
                 System.out.print("* ");

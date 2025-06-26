@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class ArrayLists {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(231); //it is used add the item in the array, we can add as many
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(231); // it is used add the item in the array, we can add as many
         // times we want in this.
         list.add(231231);
         list.add(2316566);
@@ -17,7 +17,7 @@ public class ArrayLists {
         list.add(41231);
         list.add(23111);
         list.add(2341);
-        list.clear(); //it clears the ArrayList.
+        list.clear(); // it clears the ArrayList.
 
         // get input from the user:
         for (int i = 0; i < 5; i++) {

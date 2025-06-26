@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class 1st_problem{
+
+public class program {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         long n = obj.nextInt();
@@ -9,6 +10,5 @@ public class 1st_problem{
         long cols = (m + a - 1) / a;
         long maxFlagStone = rows * cols;
         System.out.println(maxFlagStone);
-
     }
 }

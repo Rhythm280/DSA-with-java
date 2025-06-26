@@ -22,4 +22,13 @@ public class BoxPrice extends  BoxWeight {
         super(side, weight);
         this.cost = cost;
     }
+
+    public static void information() {
+        System.out.println("Hello World!");
+    }
+
+    public static void main(String[] args) {
+        Box b = new BoxPrice();
+        b.information();
+    }
 }

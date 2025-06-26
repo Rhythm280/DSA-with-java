@@ -14,6 +14,7 @@ public class WordReverse {
                 word = "";
             }
         }
+        rev = word + " " + rev;
         System.out.println(rev);
     }
 }

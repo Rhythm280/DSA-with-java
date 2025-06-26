@@ -25,8 +25,9 @@ public class Main {
         // basially the parent class is referencing to the child class.
         // if the reference to a subclass object is assigned to the super class reference variable then we only have the access to those parts of the object which are defined in the super class.
 
-        // BoxWeight bw2 = new Box(231,213,13); // this will show an error because, here we are trying to referencing a child to a parent.
-        // System.out.print(bw3);
+        // BoxWeight bw0 = new Box(231,213,13); // this will show an error because, here we are trying to referencing a child to a parent.
+        // System.out.print(bw0.h);
+
         // there are many variables in parent and child.
         // we are give access to the variables that are in the ref. type i.e. BoxWeight/
         // hence, we should have access to weight veriable.

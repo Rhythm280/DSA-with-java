@@ -349,7 +349,9 @@ public class pattern_1 {
                 System.out.print("  ");
             }
             for (int col = 0; col < row; col++) {
-                System.out.print((row - col) + " ");
+                if(col < row) {
+                    System.out.print((row - col) + " ");
+                }
             }
             System.out.println();
         }

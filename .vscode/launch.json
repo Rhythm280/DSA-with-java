@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MysteriousPresent",
+            "request": "launch",
+            "mainClass": "MysteriousPresent",
+            "projectName": "Data Structure & Algorithm_d39c0f70"
+        },
+        {
+            "type": "java",
             "name": "InsertionSort",
             "request": "launch",
             "mainClass": "programmingPractice.InsertionSort",

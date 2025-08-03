@@ -1,77 +1,168 @@
 package linkedList;
 
-public class linkedList {
-    Node head;
+public class LinkedList {
+    private Node head;
+    private Node tail;
+    private int size;
 
-    static class Node {
-        int data;
-        Node next;
+    public LinkedList() {
+        this.size = 0;
+    }
 
-        Node(int d) {
-            data = d;
-            next = null;
+    private class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data) {
+            this.data = data;
+        }
+
+        public Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+
+        public Node() {
         }
     }
 
-    public static linkedList biginsertion(linkedList list, int data) {
-        Node new_node = new Node(data);
-        new_node.next = list.head;
-        list.head = new_node;
-        return list;
-    }
-
-    public static linkedList deletonatend(linkedList list) {
-        Node slow = null;
-        Node fast = list.head;
-        while (fast.next != null) {
-            slow = fast;
-            fast = fast.next;
+    public void insertAtStatr(int val) {
+        Node node = new Node(val);
+        node.next = head;
+        head = node;
+        if (tail == null) {
+            tail = node;
         }
-        slow.next = null;
-        return list;
+        size += 1;
     }
 
-    public static linkedList delitionatbg(linkedList list) {
-        if (list.head == null) {
-            return list;
-        } else {
-            Node temp = list.head;
-            list.head = temp.next;
+    public void display() {
+        Node temp = head;
+        System.out.print("START -> ");
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
         }
-        return list;
+        System.out.println("END");
     }
 
-    public static linkedList nextElement(linkedList list, int data) {
-        Node new_node = new Node(data);
-        if (list.head == null) {
-            list.head = new_node;
-        } else {
-            Node last = list.head;
-            while (last.next != null) {
-                last = last.next;
+    // O(1) complexity
+    public void insertAtEndWithTail(int val) {
+        if (tail == null) {
+            insertAtStatr(val);
+            return;
+        }
+        Node node = new Node(val);
+        tail.next = node;
+        tail = node;
+        size += 1;
+    }
+
+    // O(n) complexity
+    public void inserAtEndWithHead(int val) {
+        Node node = new Node(val);
+        if (head == null) {
+            head = node;
+            tail = node;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = node;
+        tail = node;
+        size++;
+    }
+
+    public void inserionInMiddle(int i, int val) {
+        if (i == 0) {
+            insertAtStatr(val);
+            return;
+        }
+
+        if (i == size) {
+            insertAtEndWithTail(val);
+            return;
+        }
+
+        Node temp = head;
+        for (int j = 1; j < i; j++) {
+            temp = temp.next;
+        }
+        Node node = new Node(val, temp.next);
+        temp.next = node;
+        size++;
+    }
+
+    public int deleteFromStart() {
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
+
+    public int deleteFromEnd() {
+        if (size <= 1) {
+            return deleteFromStart();
+        }
+        Node secondLast = getIndex(size - 2);
+        int val = tail.data;
+        tail = secondLast;
+        tail.next = null;
+        size--;
+        return val;
+    }
+
+    Node getIndex(int index) {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
+    public int deleteFromMiddle(int index) {
+        if (index == 0)
+            return deleteFromStart();
+        if (index == size - 1)
+            return deleteFromEnd();
+
+        Node previousNode = getIndex(index - 1);
+        int val = previousNode.next.data;
+        previousNode.next = previousNode.next.next;
+        size--;
+        return val;
+    }
+
+    Node find(int value) {
+        Node node = head;
+        int i = 0;
+        while (node != null) {
+            if (node.data == value) {
+                return node;
             }
-            last.next = new_node;
+            i++;
+            node = node.next;
         }
-        return list;
-    }
-
-    public static void print(linkedList list) {
-        Node currNode = list.head;
-        System.out.print("LinkedList: ");
-        while (currNode != null) {
-            System.err.print(currNode.data + " ");
-            currNode = currNode.next;
-        }
+        return null;
     }
 
     public static void main(String[] args) {
-        linkedList list = new linkedList();
-        list = biginsertion(list, 10);
-        list = biginsertion(list, 11);
-        list = biginsertion(list, 12);
-        list = biginsertion(list, 13);
-        list = biginsertion(list, 14);
-        list = delitionatbg(list);
-        print(list);
+        LinkedList l = new LinkedList();
+        l.insertAtStatr(10);
+        l.insertAtStatr(20);
+        l.insertAtStatr(30);
+        l.insertAtEndWithTail(40);
+        l.inserAtEndWithHead(50);
+        l.inserionInMiddle(3, 60);
+        l.display();
+        System.out.println(l.deleteFromStart());
+        l.display();
+        System.out.println(l.deleteFromEnd());
+        l.display();
+        System.out.println(l.deleteFromMiddle(2));
+        l.display();
+        System.out.println(l.find(40));
     }
 }

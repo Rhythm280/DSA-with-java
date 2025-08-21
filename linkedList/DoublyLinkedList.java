@@ -105,7 +105,7 @@ public class DoublyLinkedList {
 
     public int deleteFromEnd() {
         Node temp = head;
-        while(temp.next != null) {
+        while (temp.next != null) {
             temp = temp.next;
         }
         int val = temp.data;
@@ -116,10 +116,10 @@ public class DoublyLinkedList {
     }
 
     public int deleteFromMiddle(int index) {
-        if(index == 0) {
+        if (index == 0) {
             return deleteFromStart();
         }
-        if(index == size - 1) {
+        if (index == size - 1) {
             return deleteFromEnd();
         }
 
@@ -129,6 +129,25 @@ public class DoublyLinkedList {
         prevNode.next.prev = prevNode;
         size--;
         return val;
+    }
+
+    public void inserAfterNode(int index, int val) {
+        if (index == size - 1) {
+            inserAtEnd(val);
+            return;
+        }
+        Node node = new Node(val);
+        Node prevNode = findNode(index);
+        if(prevNode == null) {
+            System.out.println("Node does not exist");
+            return;
+        }
+        node.next = prevNode.next;
+        prevNode.next = node;
+        node.prev = prevNode;
+        if (node.next != null) {
+            node.next.prev = node; // we might get the null pointer exception
+        }
     }
 
     public static void main(String[] args) {
@@ -143,6 +162,8 @@ public class DoublyLinkedList {
         l.insertionMiddle(1, 200);
         l.display();
         l.insertionMiddle(0, 300);
+        l.display();
+        l.inserAfterNode(1, 500);
         l.display();
         System.out.println(l.deleteFromStart());
         System.out.println(l.deleteFromEnd());

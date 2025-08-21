@@ -1,6 +1,7 @@
 package linkedList;
 
 public class LinkedList {
+
     private Node head;
     private Node tail;
     private int size;
@@ -10,6 +11,7 @@ public class LinkedList {
     }
 
     private class Node {
+
         private int data;
         private Node next;
 
@@ -20,9 +22,6 @@ public class LinkedList {
         public Node(int data, Node next) {
             this.data = data;
             this.next = next;
-        }
-
-        public Node() {
         }
     }
 
@@ -123,10 +122,12 @@ public class LinkedList {
     }
 
     public int deleteFromMiddle(int index) {
-        if (index == 0)
+        if (index == 0) {
             return deleteFromStart();
-        if (index == size - 1)
+        }
+        if (index == size - 1) {
             return deleteFromEnd();
+        }
 
         Node previousNode = getIndex(index - 1);
         int val = previousNode.next.data;
@@ -148,6 +149,20 @@ public class LinkedList {
         return null;
     }
 
+    public void insertRec(int val, int index) {
+        head = insertRec(val, index, head);
+    }
+
+    public Node insertRec(int val, int index, Node temp) {
+        if (index == 0) {
+            Node node = new Node(val);
+            size++;
+            return node;
+        }
+        temp.next = insertRec(val, index - 1, temp.next);
+        return temp;
+    }
+
     public static void main(String[] args) {
         LinkedList l = new LinkedList();
         l.insertAtStatr(10);
@@ -164,5 +179,7 @@ public class LinkedList {
         System.out.println(l.deleteFromMiddle(2));
         l.display();
         System.out.println(l.find(40));
+        l.insertRec(70, 2, l.head);
+        l.display();
     }
 }

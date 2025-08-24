@@ -1,6 +1,6 @@
 
-import java.util.Scanner;
 import java.util.HashMap;
+import java.util.Scanner;
 // import java.util.HashSet;
 
 
@@ -26,6 +26,7 @@ public class RegistrationSystem {
                 map.put(newName, 0);
             }
         }
+        sc.close();
     }
 
     // public static String getname(String name, int count) {

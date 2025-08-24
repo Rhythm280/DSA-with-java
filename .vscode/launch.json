@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MysteriousPresent",
+            "request": "launch",
+            "mainClass": "MysteriousPresent",
+            "projectName": "DSA-with-java_db3cd80a"
+        },
+        {
+            "type": "java",
+            "name": "Array",
+            "request": "launch",
+            "mainClass": "Arrays.Array",
+            "projectName": "DSA-with-java_db3cd80a"
+        },
+        {
+            "type": "java",
             "name": "inBuildStack",
             "request": "launch",
             "mainClass": "StackAndQueue.inBuildStack",

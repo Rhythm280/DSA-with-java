@@ -48,6 +48,7 @@ public class Winner {
                 return;
             }
         }
+        sc.close();
     }
 
     public static int playerScore(String player) {

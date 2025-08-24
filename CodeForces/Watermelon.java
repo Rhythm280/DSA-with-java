@@ -11,6 +11,7 @@ public class Watermelon {
         } else {
             System.out.println("NO");
         }
+        sc.close();
     }
 
     public static boolean isEven(double weight) {

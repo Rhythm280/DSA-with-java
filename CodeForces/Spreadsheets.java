@@ -16,6 +16,7 @@ public class Spreadsheets {
                 System.out.println(A1ToRxCy(str));
             }
         }
+        sc.close();
     }
 
     public static boolean isRxCyForm(String str) {

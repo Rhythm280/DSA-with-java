@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class MysteriousPresent {
@@ -34,6 +33,7 @@ public class MysteriousPresent {
         for (int i : ans) {
             System.out.print(i + " ");
         }
+        sc.close();
     }
 
     public static int findNumberOfChins(ArrayList<ArrayList<Integer>> list, int w, int h) {
